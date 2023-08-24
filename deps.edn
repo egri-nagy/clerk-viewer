@@ -1,9 +1,9 @@
 {:paths ["src"] ;; project paths
- :deps {io.github.nextjournal/clerk {:mvn/version "0.13.842"}}
+ :deps {io.github.nextjournal/clerk {:mvn/version "0.14.919"}}
 
  :aliases
  {;; Run with clj -T:build function-in-build
-  :build {:deps {io.github.clojure/tools.build {:git/tag "v0.9.4" :git/sha "76b78fe"}}
+  :build {:deps {io.github.clojure/tools.build {:git/tag "v0.9.5" :git/sha "24f2894"}}
           :ns-default build}
   :outdated {;; Note that it is `:deps`, not `:extra-deps`
              :deps {com.github.liquidz/antq {:mvn/version "RELEASE"}}
