@@ -4,4 +4,7 @@
  :aliases
  {;; Run with clj -T:build function-in-build
   :build {:deps {io.github.clojure/tools.build {:git/tag "v0.9.4" :git/sha "76b78fe"}}
-          :ns-default build}}}
+          :ns-default build}
+  :outdated {;; Note that it is `:deps`, not `:extra-deps`
+             :deps {com.github.liquidz/antq {:mvn/version "RELEASE"}}
+             :main-opts ["-m" "antq.core"]}}}
