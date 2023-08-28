@@ -5,6 +5,6 @@
  {;; Run with clj -T:build function-in-build
   :build {:deps {io.github.clojure/tools.build {:git/tag "v0.9.5" :git/sha "24f2894"}}
           :ns-default build}
-  :outdated {;; Note that it is `:deps`, not `:extra-deps`
+  :outdated {;; Note that it is `:deps`, not `:extra-deps`; run it as clj -M:outdated
              :deps {com.github.liquidz/antq {:mvn/version "RELEASE"}}
              :main-opts ["-m" "antq.core"]}}}
